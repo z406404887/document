@@ -1,0 +1,25 @@
+停止当前mysql服务
+	sudo service mysql stop
+	
+以安全模式启动mysql
+	sudo mysqld_safe --skip-grant-tables --skip-networking &
+	
+直接用root登录
+	mysql -u root
+	
+重设密码
+	use mysql;
+	UPDATE user SET password=password("test123") WHERE user='root';  
+	flush privileges;
+	
+退出mysql
+	quit
+	
+重启mysql
+	sudo service mysql restart	(一步重启，或者可以选择下面的两步操作，先停止，再启动。二选一)
+	
+	1.sudo /etc/init.d/mysql stop     ---终止
+    2.sudo /etc/init.d/mysql start # reset mysql   ---启动
+	
+	
+最后就可以用你重设的密码进行登录mysql服务了。
