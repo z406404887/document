@@ -1,0 +1,32 @@
+多个Ctrl之间调用方法：
+	首先需要使用$rootScope
+	
+	//注册changeTab方法到rootScope中
+	$rootScope.$on('changeTab',function(){
+		$scope.changeTab();
+	});
+	//在另一个Ctrl域中就可以用$emit调用
+	$scope.$emit('changeTab');
+
+	
+页面间传值
+	需要传值的页面：通过点击传值
+	span.on('click',function(){
+		$state.go("app.water.siteList",{townId:id});
+	});
+	
+	接收值的页面：
+	function(root,$scope,$stateParams,msg,APPDB,util,CONSTANTS,loader,$state,$modal,$log,SweetAlert,$localStorage){
+		var pageSetting = {
+			is_countyId_support:false,
+			total:0,
+			pageIndex : 1,
+			pageSize:10,
+			maxPage:5,
+			townId:$stateParams['townId'] ? $stateParams['townId'] : '',
+			townCode: '',
+			villageId:'',
+			villageCode:'',
+			dataList:[],
+		};
+	}
