@@ -8,7 +8,10 @@ mysql登陆用户名/密码：root/Symantec@hy
 
 服务器地址:60.191.117.34  端口号:8022    
 服务器登录用户名/密码:root/huayundata
+mysql登录用户名/密码：root/zhong.123 端口 3306
 34服务器tomcat的地址 /usr/local/apache-tomcat-8.5.31/bin
+桐庐县农村环境工程智能化管理平台:使用php，使用nginx部署，文件资源路径为/home/hy01/huayun-tonglu2/ 数据库名为 huayun_tonglu
+nginx配置文件:/usr/local/nginx/conf/
 
 60.191.117.35 是windows服务器  
 服务器登录用户名/密码:root/zhong.123
