@@ -17,7 +17,7 @@ nginx配置文件:/usr/local/nginx/conf/
 服务器登录用户名/密码:root/zhong.123
 
 服务器地址:60.191.117.37  端口号:8022    
-服务器登录用户名/密码:root/zhong.123
+服务器登录用户名/密码:root/HuaYunData@123
 mysql登录用户名/密码：root/huayundata 端口 3306
 	*该台服务器下部署了两个应用，一个公司官网使用的php，另一个是萧山固废平台使用的java，地址分别是/usr/share/nginx/html      /usr/local/apache-tomcat-8.5.34
 	*config.php是公司官网的配置文件，部署在nginx容器下
