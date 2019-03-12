@@ -1,0 +1,68 @@
+
+一.60.191.117.34-部署于该服务器下的网页应用
+	服务器登录信息:用户名:root
+				   密码:huayundata
+				   连接端口:8022
+				   
+		以下项目的数据库地址均为122.224.198.86  mysql登陆用户名/密码:root/Symantec@hy 连接端口:3306
+
+		1.梓桐项目
+			部署于/usr/local/tom-zitong-8081下
+			数据库库名为:huayun_zitong
+			访问地址:http://60.191.117.34:8081/zitong/#/login
+			访问账号:admin
+			访问密码:qpzmxxx
+			
+			
+		2.淳安固废项目
+			部署于/usr/local/tom-chuanan-garbage8008
+			数据库库名为:chunandata
+			访问地址:http://60.191.117.34:8008/garbage/index.html#/login
+			访问账号:admin
+			访问密码:chunan
+			
+		3.舟山污水项目
+			部署于/usr/local/tomcat-zs
+			数据库库名为:zhoushan_water
+			访问地址:http://60.191.117.34/zhoushan/index.html#/login
+			访问账号:admin
+			访问密码:adminadmin
+			
+			
+二.60.191.117.37-部署于该服务器下的网页应用
+	服务器登录信息:用户名:root
+				   密码:HuaYunData@123
+				   连接端口:8022
+		
+		以下项目的数据库地址均为60.191.117.37  mysql登陆用户名/密码:root/huayundata 连接端口:3306
+		备注:由于以下网页应用与数据库服务放置于同一个服务器中，
+			 所以需要注意部署的时候在后台的datasource.properties中database.url需要用localhost指代60.191.117.37，否则将会出现启动服务失败的情况
+		
+		4.桐庐固废项目
+			部署于/usr/local/tomcat-tonglu/apache-tomcat-8.5.34
+			数据库库名为:tonglu_garbage
+			访问地址:http://60.191.117.37:8081/tonglu/index.html#/login
+			访问账号:admin
+			访问密码:tonglu
+			
+		5.萧山固废项目
+			部署于/usr/local/apache-tomcat-8.5.34
+			数据库库名为:chunandata
+			访问地址:http://60.191.117.37:8080/xiaoshan/index.html#/login
+			访问账号:admin
+			访问密码:xiaoshan
+		
+三.220.189.212.18-部署于该服务器下的网页应用
+	服务器登录信息:用户名:root
+				   密码:hua!yun@data#
+				   连接端口:6262
+				   
+				   
+		6.淳安污水项目
+			部署于/usr/apache-tomcat-8.5.14
+			数据库信息:  mysql登陆用户名/密码:huayun01/huayun01  连接端口:20000
+			数据库库名为:water
+			访问地址:http://220.189.212.18:8090/huayun/index.html#/login
+			访问账号:admin
+			访问密码:adminadmin
+		
